@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado del Análisis de Radiografía</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            color: #34495e;
+        }
+        .back-button {
+            background-color: #2980b9;
+            color: #ffffff;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-button:hover {
+            background-color: #1c5985;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resultado del Análisis de Radiografía</h1>
+        <p>Predicción: {{ prediction }}</p>
+        <p>Confianza: {{ confidence }}%</p>
+        <a href="/" class="back-button">Subir Otra Imagen</a>
+    </div>
+</body>
+</html>
+
+
