@@ -12,7 +12,7 @@ app.config['UPLOAD_FOLDER'] = '/tmp'
 logging.basicConfig(level=logging.INFO)
 
 # Cargar el modelo desde un archivo local
-model_path = 'path/to/your/local/best_model_improved.h5'  # Ruta al modelo local
+model_path = 'best_model_improved.h5'  # Ruta al modelo local
 try:
     model = tf.keras.models.load_model(model_path)
     logging.info("Modelo cargado correctamente.")
